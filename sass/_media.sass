@@ -25,8 +25,11 @@
   .logo
     width: 132px
   .navbar
-    &__search,&-menu,&__user
+    &-menu,&__user
       display: none
+    &-top
+      &__search
+        display: none
 
   .menu
     &-button
@@ -40,10 +43,10 @@
       border: none
       background-color: #fff
       cursor: pointer
-    &__line
-      width: 16px
-      height: 1px
-      background-color: $text-color
+      &__line
+        width: 16px
+        height: 1px
+        background-color: #333333
 @media (max-width: 576px)
   .container
     max-width: 570px
