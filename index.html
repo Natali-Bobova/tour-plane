@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;700;800&display=swap"
     rel="stylesheet">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.css">
   <title>Best Tour Plan - Hotel Booking</title>
 </head>
@@ -100,10 +101,32 @@
       </div>
     </div>
     <!-- /.hotel-info -->
+    <div class="hotel-grid">
+      <div class="slider">
+        <!-- Slider main container -->
+        <div class="swiper-container">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide swiper-slider--one"><img class="swiper-wrapper--item" src="img/slide-1.png" alt="slide"></div>
+            <div class="swiper-slide swiper-slider--two"><img class="swiper-wrapper--item" src="img/slide-2.png" alt="slide"></div>
+            <div class="swiper-slide swiper-slider--three"><img class="swiper-wrapper--item" src="img/slide-3.png" alt="slide"></div>
+            <div class="swiper-slide swiper-slider--four"><img class="swiper-wrapper--item" src="img/slide-4.png" alt="slide"></div>
+            <div class="swiper-slide swiper-slider--five"><img class="swiper-wrapper--item" src="img/slide-5.png" alt="slide"></div>
+          </div>
+          <!-- If we need navigation buttons -->
+          <button class="slider-button slider-button--prev"></button>
+          <button class="slider-button slider-button--next"></button>
+        </div>
+        <!-- /.swiper-container -->
+      </div>
+    </div>
   </div>
   <!-- /.container -->
 </section>
 <!-- /.hotel -->
+<script src="js/swiper-bundle.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 
 </html>

@@ -1,10 +1,11 @@
 .hotel
-  padding-top: 16px
+  padding-top: 15px
   padding-bottom: 70px
   &-info
     display: flex
     align-items: center
     justify-content: space-between
+    padding-bottom: 14px
     &__text
 
     &__offer
@@ -26,7 +27,6 @@
     font-size: 12px
     line-height: 15px
     margin-top: 0
-    margin-bottom: 20px
 .stars
   flex-basis: 100%
   margin-right: 0
@@ -43,7 +43,7 @@
 .rating
   max-width: 65px
   min-height: 45px
-  margin-bottom: 14px
+  margin-bottom: 3px
   text-align: center
   color: $light
   background-color: $primary
@@ -57,3 +57,45 @@
   &__number
     font-size: 10px
     line-height: 18px
+.swiper-container
+  width: 100%
+  height: 450px
+  position: relative
+  border-radius: 8px
+  .swiper-wrapper
+  &-item
+    width: 100%
+    height: 100%
+    object-fit: cover
+  &::after
+    content: ''
+    position: absolute
+    width: 100%
+    height: 100%
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+    background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%)
+    z-index: 10
+.slider
+  width: 728px
+  &-button
+    position: absolute
+    top: 50%
+    z-index: 99
+    transform: translateY(-50%)
+    width: 30px
+    height: 30px
+    border: none
+    cursor: pointer
+    background-repeat: no-repeat
+    background-position: center
+    background-size: 10px
+    background-color: transparent
+    &--next
+      right: 18px
+      background-image: url(../img/arrow-next.svg)
+    &--prev
+      left: 18px
+      background-image: url(../img/arrow-prev.svg)
