@@ -505,7 +505,7 @@ template {
 }
 
 .hotel {
-  padding-top: 15px;
+  padding-top: 0px;
   padding-bottom: 70px;
 }
 
@@ -519,13 +519,25 @@ template {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-bottom: 14px;
+  margin-top: 17px;
+  margin-bottom: 15px;
+}
+
+.hotel-info__offer {
+  margin-left: 13px;
+  margin-top: 4px;
+}
+
+.hotel-info__description {
+  margin: 5px;
 }
 
 .hotel-grid {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -544,23 +556,10 @@ template {
           justify-content: space-between;
 }
 
-.hotel-right__offer {
-  margin-left: 14px;
-  margin-top: 4px;
-}
-
-.hotel-right__description {
-  margin: 5px;
-}
-
-.hotel-right__name {
-  margin-top: 3px;
-  margin-bottom: 0;
-}
-
 .hotel-name {
   font-size: 24px;
   line-height: 30px;
+  margin: 0;
 }
 
 .hotel-wrapper {
@@ -602,7 +601,6 @@ template {
 .rating {
   max-width: 65px;
   min-height: 45px;
-  margin-bottom: 3px;
   text-align: center;
   color: #fff;
   background-color: #EC1F46;
@@ -626,16 +624,9 @@ template {
 
 .swiper-container {
   width: 100%;
-  height: 450px;
+  height: 100%;
   position: relative;
   border-radius: 8px;
-}
-
-.swiper-container-item {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 .swiper-container::after {
@@ -649,11 +640,26 @@ template {
   right: 0;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 122, 223, 0.48)), to(rgba(255, 255, 255, 0.128)));
   background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%);
-  z-index: 10;
+  z-index: 9;
+}
+
+.swiper-wrapper__item {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.swiper-wrapper__slide {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 
 .slider {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   width: 728px;
+  height: 450px;
 }
 
 .slider-button {
@@ -816,13 +822,22 @@ template {
 .map {
   width: 347px;
   height: 213px;
-  background-color: red;
   border-radius: 10px;
+  overflow: hidden;
 }
 
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
+  }
+  .slider {
+    width: 590px;
+  }
+  .swiper-wrapper__item {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 
@@ -847,8 +862,30 @@ template {
   .search__input {
     width: 340px;
   }
+  .hotel-grid {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .hotel__slider {
+    margin-bottom: 30px;
+  }
+  .hotel-right {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .booking {
+    width: 340px;
+    margin-right: 20px;
+  }
   .slider {
     width: 100%;
+  }
+  .map {
+    width: 340px;
   }
 }
 
@@ -865,9 +902,6 @@ template {
   }
   .navbar-top__search {
     display: none;
-  }
-  .slider {
-    width: 100%;
   }
   .swiper-container {
     width: 100%;
@@ -928,6 +962,23 @@ template {
             order: -1;
     margin-left: 0;
   }
+  .slider {
+    height: 350px;
+  }
+  .hotel-right {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    min-height: 450px;
+  }
+  .booking {
+    min-width: 100%;
+    margin-bottom: 20px;
+  }
+  .map {
+    min-width: 100%;
+  }
 }
 
 @media (max-width: 576px) {
@@ -938,6 +989,21 @@ template {
   .logo {
     width: 99px;
   }
+  .slider {
+    height: 250px;
+  }
+  .hotel__slider {
+    margin-bottom: 20px;
+  }
+  .booking {
+    padding: 26px 22px;
+    margin: 0;
+    max-width: 278px;
+  }
+  .map {
+    max-width: 278px;
+    height: 183px;
+  }
 }
 
 @media (max-width: 320px) {
@@ -946,8 +1012,10 @@ template {
     width: 92%;
   }
   .slider {
-    width: 278px;
     height: 179px;
+  }
+  .swiper-wrapper__item {
+    width: 300px;
   }
 }
 /*# sourceMappingURL=style.css.map */

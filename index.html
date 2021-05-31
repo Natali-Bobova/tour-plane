@@ -1,21 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-<html xmlns="http://www.w3.org/1999/xhtml"></html> 
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;700;800&display=swap"
     rel="stylesheet">
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.css">
   <title>Best Tour Plan - Hotel Booking</title>
-  <script src="https://api-maps.yandex.ru/2.1/?apikey=6428c044-f97a-408b-8f0f-19fcbbdd1c41&lang=ru_RU" type="text/javascript">
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=6428c044-f97a-408b-8f0f-19fcbbdd1c41&lang=ru_RU">
   </script>
-      </script>
-      <script type="text/javascript">
+    
+      <script>
         ymaps.ready(init);
         function init() {
           var myMap = new ymaps.Map("map", {
@@ -115,17 +114,17 @@
     </div>
     <!-- /.hotel-info -->
     <div class="hotel-grid">
-      <div class="slider">
+      <div class="slider hotel__slider">
         <!-- Slider main container -->
         <div class="swiper-container">
           <!-- Additional required wrapper -->
           <div class="swiper-wrapper">
             <!-- Slides -->
-            <div class="swiper-slide swiper-slider--one"><img class="swiper-wrapper--item" src="img/slide-1.png" alt="slide"></div>
-            <div class="swiper-slide swiper-slider--two"><img class="swiper-wrapper--item" src="img/slide-2.png" alt="slide"></div>
-            <div class="swiper-slide swiper-slider--three"><img class="swiper-wrapper--item" src="img/slide-3.png" alt="slide"></div>
-            <div class="swiper-slide swiper-slider--four"><img class="swiper-wrapper--item" src="img/slide-4.png" alt="slide"></div>
-            <div class="swiper-slide swiper-slider--five"><img class="swiper-wrapper--item" src="img/slide-5.png" alt="slide"></div>
+            <div class="swiper-slide"><img class="swiper-wrapper__item" src="img/slide-1.png" alt="slide"></div>
+            <div class="swiper-slide"><img class="swiper-wrapper__item" src="img/slide-2.png" alt="slide"></div>
+            <div class="swiper-slide"><img class="swiper-wrapper__item" src="img/slide-3.png" alt="slide"></div>
+            <div class="swiper-slide"><img class="swiper-wrapper__item" src="img/slide-4.png" alt="slide"></div>
+            <div class="swiper-slide"><img class="swiper-wrapper__item" src="img/slide-5.png" alt="slide"></div>
           </div>
           <!-- If we need navigation buttons -->
           <button class="slider-button slider-button--prev"></button>
@@ -167,17 +166,12 @@
               </div>
               <!-- /.booking -->
               <div id="map" class="map">
-               
               </div>
               <!-- /.map -->
               </div>
           <!-- /.hotel-right -->
       </div>
-
-
-
     </div>
-  </div>
   <!-- /.container -->
 </section>
 <!-- /.hotel -->
