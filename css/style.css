@@ -786,7 +786,6 @@ template {
   font-weight: 600;
   font-size: 18px;
   line-height: 25px;
-  margin-right: 85px;
 }
 
 .booking__number {
@@ -990,9 +989,6 @@ template {
     min-width: 100%;
     margin-bottom: 20px;
   }
-  .booking__phone {
-    margin-left: 210px;
-  }
   .map {
     min-width: 100%;
   }
@@ -1051,13 +1047,7 @@ template {
     margin-left: 4px;
   }
   .booking {
-    margin-bottom: 0;
-  }
-  .booking__heading {
-    margin-right: 24px;
-  }
-  .booking__num {
-    margin-right: 15px;
+    margin-bottom: 20px;
   }
   .booking__text {
     padding-top: 3px;
